@@ -1,0 +1,130 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  background: #eee;
+  font-family: 'Kumbh Sans', sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  color: #2e3349;
+}
+.wrapper {
+  height: 100vh;
+  background-image: url(images/bg.png);
+  position: relative;
+}
+
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 350px;
+  height: 374px;
+  background-color: #fff;
+  box-shadow: 0px 50px 100px -20px #08465e81;
+  border-radius: 15px;
+}
+
+.card {
+  width: 350px;
+  height: 100%;
+  background: #fff;
+  border-radius: inherit;
+}
+
+@media (max-width: 375px) {
+  .card {
+    width: 326px;
+  }
+}
+@media (max-width: 320px) {
+  .card {
+    width: 310px;
+  }
+}
+
+.user__card {
+  position: relative;
+  background-image: url(images/card-bg.png);
+  background-position: top;
+  background-repeat: no-repeat;
+  height: 285px;
+  border-bottom: 1px solid #e8e9ec;
+}
+
+.user__info {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.user__name {
+  padding-bottom: 13px;
+}
+
+.user__age {
+  font-weight: 400;
+  padding-left: 8.5px;
+  color: #6b7082;
+}
+
+.user__location {
+  font-weight: 400;
+  font-size: 14px;
+  padding-bottom: 18px;
+  color: #6b7082;
+}
+
+.card__avatar {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.card__avatar img {
+  border-radius: 50%;
+  height: 96px;
+  width: 96px;
+  border: 5px solid #fff;
+  object-fit: cover;
+}
+
+.marks__list {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 24px;
+  padding-bottom: 27px;
+}
+
+.marks__list li {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.marks__list li div:last-child {
+  font-weight: 400;
+  font-family: Kumbh Sans;
+  font-size: 10px;
+  letter-spacing: 1.5px;
+  color: #6b7082;
+  padding-top: 9px;
+}
